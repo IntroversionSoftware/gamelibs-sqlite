@@ -1,4 +1,4 @@
-project('sqlite', 'c', version: '3.47.0')
+project('sqlite', 'c', version: '3.47.2')
 
 compiler = meson.get_compiler('c')
 c_flags = []
