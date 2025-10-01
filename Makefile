@@ -43,7 +43,7 @@ HEADERS_INST := $(patsubst include/%,$(includedir)/%,$(HEADERS))
 OBJECTS := $(patsubst %.c,$(OBJ_DIR)/%.o,$(SOURCES))
 
 CFLAGS ?= -O2
-CFLAGS += -fno-lto -Wno-unused
+CFLAGS += -fno-lto -Wno-unused -Wno-undefined-internal
 CPPFLAGS += \
     -Iinclude \
     -DSQLITE_ENABLE_RTREE=1 \
