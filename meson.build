@@ -262,7 +262,7 @@ incdirs = include_directories(incdirs)
 c_flags += ['-D_HAVE_SQLITE_CONFIG_H']
 
 # Lots of unused variables in release builds, but it's fine.
-c_flags += ['-Wno-unused']
+c_flags += ['-fno-lto', '-Wno-unused']
 
 sqlite_lib = library(
     'sqlite',
